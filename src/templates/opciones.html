@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Prueba opciones</title>
+    </head>
+    <body>
+        <h1>Claúsulas.</h1>
+        <form method="POST" action="/clausulas">
+            {{ form.hidden_tag() }}
+            <fieldset>
+                <legend>Claúsulas disponibles</legend>
+                {% for choice in form.choices %}
+                    <div>
+                        {{ choice }}
+                        {{ choice.label }}
+                    </div>
+                {% endfor %}
+            </fieldset>
+            <div>
+                {{ form.submit }}
+            </div>
+        </form> 
+    </body>
+</html>

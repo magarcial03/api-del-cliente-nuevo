@@ -1,0 +1,8 @@
+flask
+pytest
+tox
+coverage
+Flask-SQLAlchemy
+flask-marshmallow
+marshmallow-sqlalchemy
+flask-wtf
